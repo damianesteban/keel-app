@@ -3,6 +3,9 @@ const fastify = require('fastify')({
   logger: true
 })
 
+
+const name = 's';
+
 // Declare a route
 fastify.get('/', function (request, reply) {
   reply.send({ hello: 'world' })
