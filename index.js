@@ -4,7 +4,7 @@ const fastify = require('fastify')({
 })
 
 
-const name = 's';
+const name = 'ballsio'
 
 // Declare a route
 fastify.get('/', function (request, reply) {
