@@ -8,9 +8,8 @@ const name = 's';
 
 // Declare a route
 fastify.get('/', function (request, reply) {
-  reply.send({ hello: 'world' })
+  reply.send({ hello: 'world' }).status(200)
 })
-
 // Run the server!
 fastify.listen(3000, function (err, address) {
   if (err) {
@@ -19,3 +18,4 @@ fastify.listen(3000, function (err, address) {
   }
   fastify.log.info(`server listening on ${address}`)
 })
+
